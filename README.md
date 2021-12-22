@@ -5,7 +5,7 @@ MVP and USER STORY
 Audience- Thirsty people
 Problem Addressed- Don't know how to mix a drink
 Problem Solved By- creating list of cocktails with ingredients, measurements, and 
-		   mixing instructions
+		        mixing instructions
 
 
 AS A: Thirsty person,
@@ -26,14 +26,10 @@ GIVEN: a list of cocktails,
 WHEN: i have a majority required of ingredients in my pantry,
 THEN: i am shown a list of missing ingredients
 
-GIVEN:
-WHEN: 
-THEN: 
+GIVEN: a selected cocktail,
+WHEN: a list of missing ingredients exists,
+THEN: i am prompted to use a store locator
 
-GIVEN: 
-WHEN: 
-THEN: 
-
-GIVEN: 
-WHEN: 
-THEN: 
+GIVEN: a store locator,
+WHEN: i input my zip code,
+THEN: i am presented with a map of stores within a set distance
