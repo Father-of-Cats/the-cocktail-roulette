@@ -2,8 +2,7 @@
 
 MVP and USER STORY
 
-Audience- Thirsty people
-
+Audience- Thirsty people  
 Problem Addressed- Don't know how to mix a drink<br>
 Problem Solved By- creating list of cocktails with ingredients, measurements, and 
 		        mixing instructions
