@@ -1,6 +1,6 @@
 # the-cocktail-wizard
 
-<p>MVP and USER STORY:</p><br>
+######MVP and USER STORY:
 
 Audience- Thirsty people  
 Problem Addressed- Don't know how to mix a drink  
