@@ -36,4 +36,4 @@ THEN: i am presented with a map of stores within a set distance
 
 
 ## Wireframe
-!(assets/images/wireframe-project-1.png)
+![Wirefram](assets/images/wireframe-project-1.png "Wireframe")
