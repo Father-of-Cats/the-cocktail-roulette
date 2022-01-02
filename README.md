@@ -1,6 +1,6 @@
 # the-cocktail-wizard
 
-MVP and USER STORY:
+MVP and USER STORY:  
 Audience- Thirsty people  
 Problem Addressed- Don't know how to mix a drink  
 Problem Solved By- creating list of cocktails with ingredients, measurements, and mixing instructions  
@@ -9,8 +9,6 @@ Problem Solved By- creating list of cocktails with ingredients, measurements, an
 AS A: Thirsty person,
 I WANT: A list of cocktails I can make with items in my pantry,
 SO THAT: I can mix tasty drinks at home for myself and friends.		   
-
-
 
 GIVEN: a list of ingredients,
 WHEN: i select an ingredient, it's added to a list called "pantry".
