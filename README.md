@@ -33,3 +33,7 @@ THEN: i am prompted to use a store locator
 GIVEN: a store locator,
 WHEN: i input my zip code,
 THEN: i am presented with a map of stores within a set distance
+
+
+## Wireframe
+!(assets/images/wireframe-project-1.png)

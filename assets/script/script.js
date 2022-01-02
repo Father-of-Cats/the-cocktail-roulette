@@ -20,20 +20,20 @@ var getUserRepos = function() {
 };
 getUserRepos()
 
-//REPO FOR SECOND API (CURRENTLY NOT WORKING) FINDING OTHER ALTERNATIVES
-var getUserRepos2 = function() {
-	fetch("https://walmart.p.rapidapi.com/v2/auto-complete?term=macbook%20air", {
-		"method": "GET",
-		"headers": {
-			"x-rapidapi-host": "walmart.p.rapidapi.com",
-			"x-rapidapi-key": "2df09f326cmshd68e7beb8a0e5d9p15b205jsnb6b44eb3a127"
-		}
-	})
-	.then(response => {
-		return response.json()
-	})
-	.catch(err => {
-		console.error(err);
-	});
-};
-getUserRepos2()
+////REPO FOR SECOND API (CURRENTLY NOT WORKING) FINDING OTHER ALTERNATIVES
+//var getUserRepos2 = function() {
+//	fetch("https://walmart.p.rapidapi.com/v2/auto-complete?term=macbook%20air", {
+//		"method": "GET",
+//		"headers": {
+//			"x-rapidapi-host": "walmart.p.rapidapi.com",
+//			"x-rapidapi-key": "2df09f326cmshd68e7beb8a0e5d9p15b205jsnb6b44eb3a127"
+//		}
+//	})
+//	.then(response => {
+//		return response.json()
+//	})
+//	.catch(err => {
+//		console.error(err);
+//	});
+//};
+//getUserRepos2()
