@@ -1,7 +1,6 @@
 # the-cocktail-wizard
 
-###### MVP and USER STORY:
-
+MVP and USER STORY:
 Audience- Thirsty people  
 Problem Addressed- Don't know how to mix a drink  
 Problem Solved By- creating list of cocktails with ingredients, measurements, and mixing instructions  
