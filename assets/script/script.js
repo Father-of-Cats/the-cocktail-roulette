@@ -1,4 +1,7 @@
 //REPO FOR COCKTAIL API
+var userFormEl = document.querySelector("#search-by-name");
+var nameInputEl = document.querySelector("#drink-name");
+
 
 //Search for cocktail by name
 var getCocktailByName = function () {
@@ -13,6 +16,7 @@ var getCocktailByName = function () {
 		if (response.ok) {
 			response.json().then(function(data) {
 				console.log(data)
+				
 			})
 		}
 	})
@@ -25,9 +29,14 @@ var getCocktailByName = function () {
 	getCocktailByName();
 
 
+var	searchByNameHandler = function(event) {
+	event.preventDefault();
+	console.log(event);
+};
 
 
 
+userFormEl.addEventListener("submit", searchByNameHandler);
 
 
 
