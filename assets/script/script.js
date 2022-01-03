@@ -13,8 +13,15 @@ var getUserRepos = function () {
 	.catch(err => {
 		console.error(err);
 	});
+	
 };
 getUserRepos()
+
+
+
+
+
+  
 
 ////REPO FOR SECOND API (CURRENTLY NOT WORKING) FINDING OTHER ALTERNATIVES
 //var getUserRepos2 = function() {
