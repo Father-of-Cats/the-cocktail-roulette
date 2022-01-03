@@ -1,5 +1,7 @@
 //REPO FOR COCKTAIL API
-var getUserRepos = function () {
+
+//Search for cocktail by name
+var getCocktailByName = function () {
 	fetch("https://the-cocktail-db.p.rapidapi.com/lookup.php?i=11007", {
 		"method": "GET",
 		"headers": {
@@ -8,13 +10,29 @@ var getUserRepos = function () {
 		}
 	})
 	.then(response => {
-		console.log(response);
+		if (response.ok) {
+			response.json().then(function(data) {
+				console.log(data)
+			})
+		}
 	})
 	.catch(err => {
 		console.error(err);
 	});
-};
-getUserRepos()
+	
+	};
+	
+	getCocktailByName()
+
+
+
+
+
+
+
+
+
+
 
 ////REPO FOR SECOND API (CURRENTLY NOT WORKING) FINDING OTHER ALTERNATIVES
 //var getUserRepos2 = function() {
