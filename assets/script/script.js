@@ -1,22 +1,18 @@
 //REPO FOR COCKTAIL API
-var getUserRepos = function() {
-    fetch("https://the-cocktail-db.p.rapidapi.com/filter.php?i=", {
-    	"method": "GET",
-    	"headers": {
-    		"x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-    		"x-rapidapi-key": "608b51bce9mshd87f2e41a8ba626p150610jsnb1b58387566f"
-    	}
-    })
-    .then(response => {
-    	return response.json()
-    })
-
-	.then(response =>{
+var getUserRepos = function () {
+	fetch("https://the-cocktail-db.p.rapidapi.com/lookup.php?i=11007", {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
+			"x-rapidapi-key": "f8e52ccf7dmsh34c5720505ad6eap1411ebjsn682a4dddad4b"
+		}
+	})
+	.then(response => {
 		console.log(response);
 	})
-    .catch(err => {
-    	console.error(err);
-    });
+	.catch(err => {
+		console.error(err);
+	});
 };
 getUserRepos()
 
