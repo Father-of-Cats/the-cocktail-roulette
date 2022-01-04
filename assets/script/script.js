@@ -1,24 +1,119 @@
 //REPO FOR COCKTAIL API
-var getUserRepos = function() {
-    fetch("https://the-cocktail-db.p.rapidapi.com/filter.php?i=", {
-    	"method": "GET",
-    	"headers": {
-    		"x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-    		"x-rapidapi-key": "608b51bce9mshd87f2e41a8ba626p150610jsnb1b58387566f"
-    	}
-    })
-    .then(response => {
-    	return response.json()
-    })
+var nameInputEl = document.querySelector("#drink-name");
+var searchByIngredient = document.querySelector("#search-by-ingredient")
+var searchNameEl = document.querySelector("#search-name");
+var searchIngredient = document.querySelector("#search-ingredient");
+var searchGoogle = document.querySelector("#search-google");
 
-	.then(response =>{
-		console.log(response);
+
+// //Search for cocktail by name
+var getCocktailByName = function (cocktailId) {
+	fetch(`https://the-cocktail-db.p.rapidapi.com/lookup.php?i=${cocktailId}`, {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
+			"x-rapidapi-key": "f8e52ccf7dmsh34c5720505ad6eap1411ebjsn682a4dddad4b"
+		}
 	})
-    .catch(err => {
-    	console.error(err);
-    });
+		.then(response => {
+			if (response.ok) {
+				response.json().then(function (data) {
+					console.log("Calling fron ID!!", data)
+
+				})
+			}
+		})
+		.catch(err => {
+			console.error(err);
+		});
+
 };
-getUserRepos()
+
+// //Search for cocktail by name
+var getCocktailByIngredient = function (ingredId) {
+	fetch(`https://the-cocktail-db.p.rapidapi.com/lookup.php?i=${ingredId}`, {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
+			"x-rapidapi-key": "f8e52ccf7dmsh34c5720505ad6eap1411ebjsn682a4dddad4b"
+		}
+	})
+		.then(response => {
+			if (response.ok) {
+				response.json().then(function (data) {
+					console.log("Calling fron ID 2!!", data)
+
+				})
+			}
+		})
+		.catch(err => {
+			console.error(err);
+		});
+
+};
+
+
+var getIngredientId = function (ingredientName) {
+	fetch(`https://the-cocktail-db.p.rapidapi.com/search.php?i=${ingredientName}`, {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
+		"x-rapidapi-key": "f8e52ccf7dmsh34c5720505ad6eap1411ebjsn682a4dddad4b"
+	}
+})
+.then(response => {
+	if (response.ok) {
+		response.json().then(function (data) {
+			console.log("id Fetch: ", data)
+			var ingredId = data.ingredients[0].idIngredient
+			getCocktailByIngredient(ingredId)
+
+		})
+	}
+	console.log("Getting id")
+})
+.catch(err => {
+	console.error(err);
+});
+}
+
+var	searchByNameHandler = function(event) {
+	event.preventDefault();
+	var drinkName = nameInputEl.value;
+	console.log("Drink: ", drinkName);
+	//getCocktailByName(drinkName);
+	getIngredientId(drinkName);
+};
+
+var	searchIngredientHandler = function(event) {
+	event.preventDefault();
+	var ingredientName = searchByIngredient.value;
+	console.log("Ingredient: ", ingredientName);
+	getIngredientId(ingredientName);
+
+};
+
+var getRandomDrink = function() {
+	fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php").then(function(response) {
+		response.json().then(function(data) {
+			console.log(data);
+		})
+	});
+};
+getRandomDrink();
+
+searchNameEl.addEventListener("click", searchByNameHandler);
+
+
+searchIngredient.addEventListener("click", searchIngredientHandler);
+
+
+
+
+
+
+
+
 
 ////REPO FOR SECOND API (CURRENTLY NOT WORKING) FINDING OTHER ALTERNATIVES
 //var getUserRepos2 = function() {

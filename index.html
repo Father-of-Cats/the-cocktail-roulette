@@ -1,141 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Cocktail Wizard!</title>
-  <link rel="stylesheet" href="/assets/style/style.css">
-  <!-- <link rel="stylesheet" href="/assets/style/bootflat.github.io-master/bootflat/css/bootflat.css"> -->
-  <link rel="stylesheet" href="/assets/style/bootflat.github.io-master/css/site.min.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cocktail Wizard!</title>
+<link rel="shortcut icon" href="/assets/images/alcohol.png" type="image/x-icon">
+<link rel="stylesheet" href="/assets/style/style.css">
+<!-- <link rel="stylesheet" href="/assets/style/bootflat.github.io-master/bootflat/css/bootflat.css"> -->
+<link rel="stylesheet" href="/assets/style/bootflat.github.io-master/css/site.min.css">
 </head>
 <body class="bg-primary">
-	<!-- <div class="container">
-		<div class="row-align-items-center">	
-			<header class="col-lg-10-offset-2">
-				<h1 class="text-center">The Cocktail Wizard!</h1>
-				<ul class="nav-right">
-					<li>Make a Drink</li>
-					<li>Store Locator</li>
-				</ul>
-			</header>
-		</div>
-	</div>
-	<nav class="navbar-text">
-			<p class="text-center">Are you thirsty? Find drinks you can make using ingredients from your 
-			pantry! Look for recipes below!
-			</p>
-	</nav> -->
 	<header class="navbar navbar-inverse">
 		<div class="container-fluid">
-		<div class="navbar-header">
-		<h2 class="navbar-brand">The Cocktail Wizard</h2>
-		</div>
+			<div class="navbar-header">
+				<h2 class="navbar-brand">The Cocktail Wizard</h2>
+			</div>
 		</div>
 	</header>
 	<main>
-		<main class="container">
-			<!-- Left Column -->
-			<div class="row">
-				<div class="col-12">
-					<section class="col-lg-6">
-						<h3 class=" card-header">Make a drink!</h3>
-						<!-- Add Form here -->
-						<div class="text-right"><form class="card-body">
-							<label for="search-by-name">Search for a cocktail by name</label>
-							<input name="search-by-name" type="text">
-							<button class="btn text-end" type="submit">Search</button>
+	<section class="container">
+	<!-- Left Column -->
+	<div class="row">
+	<div class="col-12">
+	<section class="col-lg-6">
+	<h3 class=" card-header">Make a drink!</h3>
+	<!-- Add Form here -->
+	<div class="text-right"><form class="card-body">
+	<label for="search-by-name">Search for a cocktail by name</label>
+	<input name="search-by-name" type="text">
+	<button class="btn text-end" type="submit">Search</button>
 
-							<label for="search-by-ingredient">Search for a cocktail by ingredient</label>
-							<input name="search-by-ingredient"  type="text">
-							<button class="btn" type="submit">Search</button>
-						</form></div>
-					</section>
-					<!-- Right Column -->
-			<!-- Output of the search will go here using jscript to fill content -->
+	<label for="search-by-ingredient">Search for a cocktail by ingredient</label>
+	<input name="search-by-ingredient"  type="text">
+	<button class="btn" type="submit">Search</button>
+	</form></div>
+	</section>
+	<!-- Right Column -->
+	<!-- Output of the search will go here using jscript to fill content -->
 
-<section class="col-lg-6">
+	<section class="col-lg-6">
 	<div class="panel panel-success bg-dark">						
-		<div class="panel-heading">
-			<div class="panel-title">
-				Search Results Box		
-			</div>
-		</div>
-		<div class="panel-body text-dark">
-			<div class="panel-group panel-group-lists collapse in" id="accordion2" style="">
-				<div class="panel">
-				  <div class="panel-heading">
-					<h4 class="panel-title">
-					  <a data-toggle="collapse" data-parent="#accordion2" href="#collapseFour" class="collapsed">
-						Collapsible Group Item #1
-					  </a>
-					</h4>
-				  </div>
-				  <div id="collapseFour" class="panel-collapse collapse" style="height: 0px;">
-					<div class="panel-body">
-					  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-					</div>
-				  </div>
-				</div>
-				<div class="panel">
-				  <div class="panel-heading">
-					<h4 class="panel-title">
-					  <a data-toggle="collapse" data-parent="#accordion2" href="#collapseFive" class="collapsed">
-						Collapsible Group Item #2
-					  </a>
-					</h4>
-				  </div>
-				  <div id="collapseFive" class="panel-collapse collapse">
-					<div class="panel-body">
-					  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-					</div>
-				  </div>
-				</div>
-				<div class="panel">
-				  <div class="panel-heading">
-					<h4 class="panel-title">
-					  <a data-toggle="collapse" data-parent="#accordion2" href="#collapseSix" class="collapsed">
-						Collapsible Group Item #3
-					  </a>
-					</h4>
-				  </div>
-				  <div id="collapseSix" class="panel-collapse collapse">
-					<div class="panel-body">
-					  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-					</div>
-				  </div>
-				</div>
-			  </div>
-		</div>
+	<div class="panel-heading">
+	<div class="panel-title">
+	Search Results Box		
 	</div>
-</section>
+	</div>
+	<div class="panel-body text-dark">
+	<p>blah blah blah</p>
+	</div>
+	</div>
+	</section>
 
 
-		</main>
+	</main>
 
-		<section class="">
-			<h3>Store Locator</h3>
-			<p>Are you missing items to make a drink? Find a liquor store nearby to
-					buy what you need.
-			</p>
-			<!-- Placeholder Googlemap until the API is completed -->
-			<iframe 
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26804.521054597346!2d-96.78077219999999!3d32.88322349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f958a69f2e1%3A0x95fc10ba98f7aad4!2sNorthPark%20Center!5e0!3m2!1sen!2sus!4v1637038034616!5m2!1sen!2sus" 
-			width="300" 
-			height="300" 
-			style="border:0;" 
-			allowfullscreen="" 
-			loading="lazy">
-			</iframe>
+	<section class="">
+	<h3>Store Locator</h3>
+	<p>Are you missing items to make a drink? Find a liquor store nearby to
+	buy what you need.
+	</p>
+	<!-- Add Store Locator Form here -->
+	<button class="btn" id="search-google">api for google</button>
 
-		</section>
-      
-  </main>
-  <script src="./assets/script/script.js"></script>
-  <script src="/assets/style/bootflat.github.io-master/bootflat/js/jquery.fs.stepper.min.js"></script>
-  <script src="/assets/style/bootflat.github.io-master/bootflat/js/icheck.min.js"></script>
-  <!-- <script src="/assets/style/bootflat.github.io-master/bootflat/js/jquery.fs.selecter.min.js"></script> -->
-  <!-- <script src="/assets/style/bootflat.github.io-master/bootflat/js/icheck.min.js"></script> -->
-  <!-- <script src="/assets/style/bootflat.github.io-master/js/site.min.js"></script> -->
+	<!-- Placeholder Googlemap until the API is completed -->
+	<iframe 
+	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26804.521054597346!2d-96.78077219999999!3d32.88322349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f958a69f2e1%3A0x95fc10ba98f7aad4!2sNorthPark%20Center!5e0!3m2!1sen!2sus!4v1637038034616!5m2!1sen!2sus" 
+	width="300" 
+	height="300" 
+	style="border:0;" 
+	allowfullscreen="" 
+	loading="lazy">
+	</iframe>
+	</section>
+	</main>
+	<!-- <div class="col-lg-12"> -->
+		<footer class="footer d-flex">
+			<div class="container-fluid">
+				<div class="clearfix">
+					<div class="footer-logo d-flex p-50">
+						<a href="#">
+							<img src="/assets/images/alcohol.png" alt="Cocktail Wizard icon" height="40px">
+							The Cocktail Wizard
+						</a>
+					</div>
+					<div class="container d-flex-row">
+					<dl class="footer-nav text-center flex-row">
+						<dt class="nav-title">Drinking Tools</dt>
+						<dd class="nav-item"><a href="https://www.responsibility.org/drink-responsibly/">Drink Responsibly</a></dd>
+						<dd class="nav-item"><a href="https://en.wikipedia.org/wiki/Alcohol_by_volume">ABV info</a></dd>
+						<dd class="nav-item"><a href="https://alcoholrehabhelp.org/blog/sobering-up/">Sobering up</a></dd>
+					</dl>
+					<div>
+				</div>
+			</div>	
+		</footer>
+	<!-- </div> -->
+	<script src="./assets/script/script.js"></script>
+	<script src="/assets/style/bootflat.github.io-master/bootflat/js/jquery.fs.stepper.min.js"></script>
+	<script src="/assets/style/bootflat.github.io-master/bootflat/js/icheck.min.js"></script>
+	<!-- <script src="/assets/style/bootflat.github.io-master/bootflat/js/jquery.fs.selecter.min.js"></script> -->
+	<!-- <script src="/assets/style/bootflat.github.io-master/bootflat/js/icheck.min.js"></script> -->
+	<!-- <script src="/assets/style/bootflat.github.io-master/js/site.min.js"></script> -->
 </body>
 </html>
