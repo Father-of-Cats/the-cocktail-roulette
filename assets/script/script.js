@@ -93,6 +93,14 @@ var	searchIngredientHandler = function(event) {
 
 };
 
+var getRandomDrink = function() {
+	fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php").then(function(response) {
+		response.json().then(function(data) {
+			console.log(data);
+		})
+	});
+};
+getRandomDrink();
 
 searchNameEl.addEventListener("click", searchByNameHandler);
 
