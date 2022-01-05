@@ -113,6 +113,7 @@ var getRandomDrink = function () {
 			drinkData = data.drinks[0]
 
 			var allIngredients = findDuplicates("strIngredient")
+			ingredientEl.textContent = ""
 			allIngredients.forEach(element => {
 				console.log('element :>> ', element);
 				var node = document.createElement("li")
