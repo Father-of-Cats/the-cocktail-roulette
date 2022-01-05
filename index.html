@@ -8,132 +8,116 @@
 <link rel="shortcut icon" href="/assets/images/alcohol.png" type="image/x-icon">
 <link rel="stylesheet" href="/assets/style/style.css">
 <link rel="stylesheet" href="/assets/style/bootflat.github.io-master/css/site.min.css">
-<!-- <link rel="stylesheet" href="/assets/style/bootflat.github.io-master/bootflat/css/bootflat.css"> -->
 </head>
-<body>
-	<main class="">
-		<!-- <header class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<h2 class="navbar-brand">The Cocktail Wizard</h2>
+<body class="bg-danger">
+	<!-- <main class=""> -->
+	<!-- Header/Navbar -->
+			<header class="navbar navbar-default navbar-custom" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<h4>Welcome to Cocktail Roulette <img src="/assets/images/alcohol.png" height="40px" alt="Bottle and a Glass"> </h4>
+					<!--Collapsable Button-->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a class="nav-item" href="https://www.responsibility.org/drink-responsibly">Drink Responsibly</a></li>
+							<li><a class="nav-link current" href="https://en.wikipedia.org/wiki/Alcohol_by_volume">ABV Info</a></li>
+							<li><a class="nav-link" href="https://alcoholrehabhelp.org/blog/sobering-up">Sobering Up!</a></li>
+							<!-- <li><a class="nav-link" href="color-picker.html">Color Picker</a></li> -->
+						</ul>
+					</div>
 				</div>
-			</div> -->
-<header class="header">
-<nav class="navbar navbar-default navbar-custom" role="navigation">
-<div class="container">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand" href="index.html"><img src="img/logo.png" height="40"></a>
-</div>
-<div class="collapse navbar-collapse">
-<ul class="nav navbar-nav navbar-right">
-<li><a class="nav-link" href="getting-started.html">Getting Started</a></li>
-<li><a class="nav-link current" href="documentation.html">Documentation</a></li>
-<li><a class="nav-link" href="free-psd.html">Free PSD</a></li>
-<li><a class="nav-link" href="color-picker.html">Color Picker</a></li>
-</ul>
-</div>
-</div>
-</nav>
-</header>
-<div class="topic">
-	<div class="container">
-		<div class="col-md-8">
-		  <h3>Welcome to Cocktail Roulette</h3>
-		  <h4>The ultimate random drink generator! Enter a random phrase and get a random drink!</h4>
-		</div>
-	</div>
-</div>
+			</header>
 
-<div class="col-md-6">
-	<div class="panel">
-	  <ul id="myTab1" class="nav nav-tabs nav-justified">
-		<li class="active"><a href="#home1" data-toggle="tab">Home</a></li>
-		<li class=""><a href="#profile1" data-toggle="tab">Profile</a></li>
-		<li class="dropdown">
-		  <a href="#" id="myTabDrop1-1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-		  <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-			<li><a href="#dropdown1-1" tabindex="-1" data-toggle="tab">@fat</a></li>
-			<li><a href="#dropdown1-2" tabindex="-1" data-toggle="tab">@mdo</a></li>
-		  </ul>
-		</li>
-	  </ul>
-	  <div id="myTabContent" class="tab-content">
-		<div class="tab-pane fade active in" id="home1">
-		  <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
-		</div>
-		<div class="tab-pane fade" id="profile1">
-		  <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.  </p>
-		</div>
-		<div class="tab-pane fade" id="dropdown1-1">
-		  <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...</p>
-		</div>
-		<div class="tab-pane fade" id="dropdown1-2">
-		  <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche ... </p>
-		</div>
-	  </div>
-	</div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-			<!-- Right Column -->
-			<!-- Output of the search will go here using jscript to fill content -->
-
-			<section class="col-lg-6">
-			<div class="panel panel-success bg-dark">						
-			<div class="panel-heading">
-			<div class="panel-title">
-			Search Results Box		
-			</div>
-			</div>
-			<div class="panel-body text-dark">
-			<p>blah blah blah</p>
-			</div>
-			</div>
-			</section>
-		</div>
-		<div class="col-lg-12">
-		<div class="container-fluid">
-		<section class="jumbotron col-md-8-offset-2">
-		<h3 class="jumbotron_heading">Store Locator</h3>
-		<p class="jumbotron-contents">Are you missing items to make a drink? Find a liquor store nearby to
-		buy what you need.
-		</p>
-		<!-- Placeholder Googlemap until the API is completed -->
-		<div class="">
-		<iframe 
-		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26804.521054597346!2d-96.78077219999999!3d32.88322349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f958a69f2e1%3A0x95fc10ba98f7aad4!2sNorthPark%20Center!5e0!3m2!1sen!2sus!4v1637038034616!5m2!1sen!2sus" 
-		width="300" 
-		height="300" 
-		style="border:0;" 
-		allowfullscreen="" 
-		loading="lazy">
-		</iframe>
-		</div>
+	<!--Intro Container-->
+	<div class="topic">
+		<section class="container">
+			<article class="col-md-8">
+				<h3>The ultimate random drink generator! Enter a random phrase and get a random drink!</h3>
+			</article>
 		</section>
-	    </div>
-        </div>
-		</main>
-		<script src="./assets/script/script.js"></script>
-		<!-- <script src="/assets/style/bootflat.github.io-master/bootflat/js/jquery.fs.stepper.min.js"></script>
-		<script src="/assets/style/bootflat.github.io-master/bootflat/js/icheck.min.js"></script> -->
-		<script src="/assets/style/bootflat.github.io-master/js/"></script>
+	</div>
+	<!--Drink & Search bar area-->
+	<div class="row">
+		<section class="col-12">
+		<div class="container-fluid">
+		<!--Left Side Search Bar-->			
+			<div class="col-lg-6">
+				<div class="panel text-center" id="searchcontainer">		
+					<div class="card">
+					<div id="left-panel" class="container-fluid">	
+						<h2 id="panel-title aligin-items-center">Enter Your Drinking Moto</h2>
+						<form id="user-form" class="card-body aligin-items-center">
+							<label class="form-label" for="username"></label>
+							<input name="username" id="username" type="text" autofocus="true" class="form-input">
+							<button type="submit" class="btn">Get Drink</button>
+						</form>
+					</div>
+					</div>
+				</div>
+			</div>	
+		<!--Right Side Data Tabs-->
+			<span id="repo-search-term"></span>
+			<div class="col-lg-6">
+				<div class="panel">
+					<div class="tabbable tabs-left clearfix">
+						<ul id="myTab1" class="nav nav-tabs">
+							<li class="active"><a href="#drink" data-toggle="tab">Drink</a></li>
+							<li class=""><a href="#ingredient" data-toggle="tab">Ingredients</a></li>
+							<li class=""><a href="#instructions" data-toggle="tab">Instructions</a></li>
+						</ul>
+		<!--In Tab Info-->
+						<div id="myTabContent" class="tab-content">
+							<div class="tab-pane fade active in" id="drink">
+								<div class="col-sm-6 aligin-items-center">
+									<div class="thumbnail">
+										<div class="caption">
+											<h3 id="drink-name">What will your drink be?</h3>
+										</div>
+										<img class="img-rounded" id="image" src="" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="ingredient">
+								<p class="text-center" id="ingredients">CLICK IT!</p>
+							</div>
+							<div class="tab-pane fade justify-center" id="instructions">
+								<div id="glass-type">you should</div>
+							<p>CLICK THE BUTTON!!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>		
+	</div>
+<!--Maps Jumbotron-->
+	<div class="col-lg-12">
+		<div class="container text-center">
+			<section class="jumbotron col-md-8-offset-2">
+				<h3 class="jumbotron_heading">Store Locator</h3>
+				<p class="jumbotron-contents">Are you missing items to make a drink? Find a liquor store nearby to buy what you need.</p>
+			<!-- Placeholder Googlemap until the API is completed -->
+				<iframe 
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26804.521054597346!2d-96.78077219999999!3d32.88322349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f958a69f2e1%3A0x95fc10ba98f7aad4!2sNorthPark%20Center!5e0!3m2!1sen!2sus!4v1637038034616!5m2!1sen!2sus" 
+				width="300" 
+				height="300" 
+				style="border:0;" 
+				allowfullscreen="" 
+				loading="lazy">
+				</iframe>
+			</section>	
+		</div>
+	</div>	
+<!-- </main> -->
+<script src="./assets/script/script.js"></script>
+<script src="/assets/style/bootflat.github.io-master/js/site.min.js"></script>
 </body>
 </html>
