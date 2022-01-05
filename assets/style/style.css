@@ -1,0 +1,12 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0px;
+}
+.container section{
+    padding: 5px 5px;
+}
+header {
+background-color: #8cc152;
+}
