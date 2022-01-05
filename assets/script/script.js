@@ -101,7 +101,7 @@ var drinkNameEl = document.querySelector("#drink-name");
 var drinkImageEl = document.querySelector("#image");
 var glassTypeEl = document.querySelector("#glass-type");
 var ingredientEl = document.querySelector("#ingredients");
-var instructionsEl = document.querySelector("#insturctions");
+var instructionsEl = document.querySelector("#instructions");
 
 
 var getRandomDrink = function () {
