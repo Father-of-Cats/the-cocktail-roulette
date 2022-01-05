@@ -65,6 +65,27 @@
 			loading="lazy">
 			</iframe>
 
+			<div class="card">
+				<h3 class="card-header text-uppercase">Search By Random</h3>
+				<form id="user-form" class="card-body">
+					<label class="form-label" for="username">Drink</label>
+					<input name="username" id="username" type="text" autofocus="true" class="form-input" />
+					<button type="submit" class="btn">Get Drink</button>
+				</form>
+			</div>
+
+
+			<div class="col-12 col-md-8">
+				<h2 class="subtitle">Showing Random Drink: <span id="repo-search-term"></span></h2>
+				<div id="repos-container" class="list-group">
+					<h2 id="drink-name">Name of Drink</h2>
+					<img id="image" src="" alt="">
+					<div id="glass-type">glass type</div>
+					<ol id="ingredients">ingredient</ol>
+					<div id="instructions">instructions</div>
+				</div>
+			</div>
+
 		</footer>
       
   </main>
