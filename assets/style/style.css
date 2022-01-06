@@ -4,9 +4,8 @@
     margin: 0 0;
     padding: 0px;
 }
-body {
-    /* min-height: 200vh; */
-    background-color: #a87ca0;
+#bigbody {
+    background-color: #50c1e9;
 }
 div section article {
     padding-top: 30px;
@@ -16,26 +15,15 @@ div section article {
     color:#434a54
 }
 .panel {
-    min-height: 300px;
+    min-height: 200px;
 }
-
 #panel-title{
     margin: 0%;
 }
 .container section{
     padding: 5px 5px;
 }
-footer {
-    background-color: blanchedalmond;
+#jumbocontainer {
+    padding: 30px
 }
-footer nav .footer-nav {
-    margin-left: auto;
-}
-/* .navbar-custom .navbar-toggle {
-    position: relative;
-    background-color: #50c1e9;
-    border-color: #50c1e9;
-}
-nav .footer {
-    background-color: #875f9a;
-} */
+
