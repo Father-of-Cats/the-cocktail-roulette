@@ -28,7 +28,6 @@
 							<li><a class="nav-item" href="https://www.responsibility.org/drink-responsibly">Drink Responsibly</a></li>
 							<li><a class="nav-link current" href="https://en.wikipedia.org/wiki/Alcohol_by_volume">ABV Info</a></li>
 							<li><a class="nav-link" href="https://alcoholrehabhelp.org/blog/sobering-up">Sobering Up!</a></li>
-							<!-- <li><a class="nav-link" href="color-picker.html">Color Picker</a></li> -->
 						</ul>
 					</div>
 				</div>
@@ -63,10 +62,10 @@
 			</div>	
 		<!--Right Side Data Tabs-->
 			<span id="repo-search-term"></span>
-			<div class="col-lg-6">
+			<div class="col-lg-6">	
 				<div class="panel">
 					<div class="tabbable tabs-left clearfix">
-						<ul id="myTab1" class="nav nav-tabs">
+						<ul id="myTab1" class="nav nav-tabs nav-justified">
 							<li class="active"><a href="#drink" data-toggle="tab">Drink</a></li>
 							<li class=""><a href="#ingredient" data-toggle="tab">Ingredients</a></li>
 							<li class=""><a href="#instructions" data-toggle="tab">Instructions</a></li>
@@ -74,14 +73,16 @@
 		<!--In Tab Info-->
 						<div id="myTabContent" class="tab-content">
 							<div class="tab-pane fade active in" id="drink">
-								<div class="col-sm-6 aligin-items-center">
-									<div class="thumbnail">
-										<div class="caption">
-											<h3 id="drink-name">What will your drink be?</h3>
+								<!-- <div class="container"> -->
+								<div class="col-sm-6">
+									<div class="container d-flex">
+										<div class="title">
+											<h4 id="drink-name">What will your drink be?</h4>
 										</div>
 										<img class="img-rounded" id="image" src="" alt="">
 									</div>
 								</div>
+								<!-- </div> -->
 							</div>
 							<div class="tab-pane fade" id="ingredient">
 								<p class="text-center" id="ingredients">CLICK IT!</p>
@@ -104,7 +105,7 @@
 				<h3 class="jumbotron_heading">Store Locator</h3>
 				<p class="jumbotron-contents">Are you missing items to make a drink? Find a liquor store nearby to buy what you need.</p>
 			<!-- Placeholder Googlemap until the API is completed -->
-				<div class="container-fluid" id="jumbocontainer">
+				<!-- <div class="container" id="jumbocontainer"> -->
 				<iframe 
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26804.521054597346!2d-96.78077219999999!3d32.88322349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f958a69f2e1%3A0x95fc10ba98f7aad4!2sNorthPark%20Center!5e0!3m2!1sen!2sus!4v1637038034616!5m2!1sen!2sus" 
 				width="300" 
@@ -113,7 +114,7 @@
 				allowfullscreen="" 
 				loading="lazy">
 				</iframe>
-				</div>
+				<!-- </div> -->
 			</section>	
 		</div>
 	</div>	
