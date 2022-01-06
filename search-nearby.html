@@ -6,8 +6,7 @@
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <style>
-    /* Always set the map height explicitly to define the size of the div
-     * element that contains the map. */
+    /*element that contains the map. */
     #map {
       height: 100%;
       background-color: grey;
@@ -21,25 +20,17 @@
       padding: 0;
     }
 
-    /* TODO: Step 4A1: Make a generic sidebar. */
   </style>
 </head>
 
 <body>
-  <!-- TODO: Step 4A2: Add a generic sidebar -->
-
   <!-- Map appears here -->
   <div id="map"></div>
 
-  <!-- TODO: Step 1B, Add a map -->
 <script>
-	/* Note: This example requires that you consent to location sharing when
-	 * prompted by your browser. If you see the error "Geolocation permission
-	 * denied.", it means you probably did not give permission for the browser * to locate you. */
-
-	/* TODO: Step 2, Geolocate your user
-    * Replace the code from here to the END TODO comment with this code
-    * from codelab instructions. */
+/* Note: This example requires that you consent to location sharing when
+ * prompted by your browser. If you see the error "Geolocation permission
+ * denied.", it means you probably did not give permission for the browser * to locate you. */
 let pos;
 let map;
 let bounds;
@@ -52,7 +43,6 @@ function initMap() {
     bounds = new google.maps.LatLngBounds();
     infoWindow = new google.maps.InfoWindow;
     currentInfoWindow = infoWindow;
-    /* TODO: Step 4A3: Add a generic sidebar */
 
     // Try HTML5 geolocation
     if (navigator.geolocation) {
@@ -72,7 +62,6 @@ function initMap() {
         infoWindow.open(map);
         map.setCenter(pos);
 
-				/* TODO: Step 3B2, Call the Places Nearby Search */
 				// Call Places Nearby Search on user's location
 				getNearbyPlaces(pos);
     }, () => {
@@ -102,12 +91,11 @@ function handleLocationError(browserHasGeolocation, infoWindow) {
     infoWindow.open(map);
     currentInfoWindow = infoWindow;
 
-		/* TODO: Step 3B3, Call the Places Nearby Search */
 		// Call Places Nearby Search on the default location
 		getNearbyPlaces(pos);
 }
-/* END TODO: Step 2, Geolocate your user */
-/* TODO: Step 3B1, Call the Places Nearby Search */
+/* END Geolocate your user */
+
 // Perform a Places Nearby Search Request
 function getNearbyPlaces(position) {
     let request = {
@@ -127,7 +115,7 @@ function nearbyCallback(results, status) {
     }
 }
 
-/* TODO: Step 3C, Generate markers for search results */
+
 // Set markers at the location of each place result
 function createMarkers(places) {
     places.forEach(place => {
@@ -137,7 +125,6 @@ function createMarkers(places) {
         title: place.name
     });
 
-    /* TODO: Step 4B: Add click listeners to the markers */
 
     // Adjust the map bounds to include the location of this marker
     bounds.extend(place.geometry.location);
@@ -146,13 +133,8 @@ function createMarkers(places) {
     * show all the markers within the visible area. */
     map.fitBounds(bounds);
 }
-
-/* TODO: Step 4C: Show place details in an info window */
-
 </script>
 
-<!-- TODO: Step 1C, Get an API key -->
-<!-- TODO: Step 3A, Load the Places Library -->
 <script async defer 
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8qMACBrfNlvCF85nCQ4MNwsxTVCPf4E4&libraries=places&callback=initMap">
 </script>
