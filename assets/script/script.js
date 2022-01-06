@@ -101,17 +101,17 @@ searchIngredient.addEventListener("click", searchIngredientHandler);
 
 //STORE LOCATOR
 //This takes the current user position and console consolelogs the lat/long
-navigator.geolocation.getCurrentPosition(
-	position => {
-		console.log(position.coords.latitude);
-		console.log(position.coords.longitude);
-	},
-	error => {
-		console.log(error.message);
-	}
-)
 
-GET "https://maps.googleapis.com/maps/api/geocode/json?address=92102&key=AIzaSyC8qMACBrfNlvCF85nCQ4MNwsxTVCPf4E4"
+//REMOVING FUNCTIONALITY WHILE USING SEARCH-NEARBY.HTML PAGE
+//navigator.geolocation.getCurrentPosition(
+//	position => {
+//		console.log(position.coords.latitude);
+//		console.log(position.coords.longitude);
+//	},
+//	error => {
+//		console.log(error.message);
+//	}
+//)
 
 
 
