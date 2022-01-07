@@ -7,7 +7,16 @@
 #bigbody {
     background-color: #50c1e9;
 }
-
+#drinkbox {
+    max-height: 400px;
+}
+article {
+    padding: 30px;
+}
+#image {
+    max-height: 200px;
+    padding: 10px 10px 10px;
+}
 .jumbotron_heading{
     padding:20px;
     color:#434a54
