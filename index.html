@@ -1,45 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Cocktail Wizard!</title>
-	<!-- BOOTFLAT GOES HERE -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cocktail Roulette!</title>
+<link rel="shortcut icon" href="./assets/images/alcohol.png" type="image/x-icon">
+<link rel="stylesheet" href="./assets/style/style.css">
+<link rel="stylesheet" href="./assets/style/bootflat.github.io-master/css/site.min.css">
 </head>
+<body id="bigbody">
+	<!-- Header/Navbar -->
+			<header class="navbar navbar-default navbar-custom" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<h4>Welcome to Cocktail Roulette <img src="./assets/images/alcohol.png" height="40px" alt="Bottle and a Glass"> </h4>
+					<!--Collapsable Button-->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Navigation Tab</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a class="nav-link" href="https://www.responsibility.org/drink-responsibly">Drink Responsibly</a></li>
+							<li><a class="nav-link" href="https://en.wikipedia.org/wiki/Alcohol_by_volume">ABV Info</a></li>
+							<li><a class="nav-link" href="https://alcoholrehabhelp.org/blog/sobering-up">Sobering Up!</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
 
-<body>
-
-  <main>
-    <header class="header">
-			<h1>The Cocktail Wizard!</h1>
-			<p>Are you thirsty? Find drinks you can make using ingredients from your 
-					pantry! Look for recipes below!
-			</p>
-
-			<nav>
-				<ul>
-					<li>Make a Drink</li>
-					<li>Store Locator</li>
-				</ul>
-			</nav>
-		</header>
-			
-			<!-- Left Column -->
-			<div class="card">
-				<h3 class="card-header">Make a drink!</h3>
-				<!-- Add Form here -->
-				<form class="card-body">
-					<label for="search-by-name">Search for a cocktail by name</label>
-					<input id="drink-name" type="text">
-					<button class="btn" id="search-name" type="click">Search</button>
-
-					<label >Search for a cocktail by ingredient</label>
-					<input id="search-by-ingredient"  type="text">
-					<button class="btn" id="search-ingredient" type="click">Search</button>
-				</form>
-
+	<!--Intro Container-->
+	<div class="topic">
+		<section class="container">
+			<article class="col-md-8">
+				<h3>The ultimate random drink generator! Enter a random phrase and get a random drink!</h3>
+			</article>
+		</section>
+	</div>
+	<!--Drink & Search bar area-->
+	<div class="row">
+		<section class="col-12">
+		<div class="container-fluid">
+		<!--Left Side Search Bar-->			
+			<div class="col-lg-6">
+				<div class="panel text-center" id="searchcontainer">		
+					<div class="card">
+					<div id="left-panel" class="container-fluid">	
+						<h2 id="panel-title aligin-items-center">Enter Your Drinking Moto</h2>
+						<form id="user-form" class="card-body aligin-items-center">
+							<label class="form-label" for="username"></label>
+							<input name="username" id="username" type="text" autofocus="true" class="form-input">
+							<button type="submit" class="btn">Get Drink</button>
+						</form>
+					</div>
+					</div>
+				</div>
+			</div>	
+		<!--Right Side Data Tabs-->
+			<span id="repo-search-term"></span>
+			<div class="col-lg-6">	
+				<div class="panel">
+					<div class="tabbable tabs-left clearfix">
+						<ul id="myTab1" class="nav nav-tabs nav-justified">
+							<li class="active"><a href="#drink" data-toggle="tab">Drink</a></li>
+							<li class=""><a href="#ingredient" data-toggle="tab">Ingredients</a></li>
+							<li class=""><a href="#instructions" data-toggle="tab">Instructions</a></li>
+						</ul>
+		<!--In Tab Info-->
+						<div id="myTabContent" class="tab-content">
+							<div class="tab-pane fade active in" id="drink">
+								<!-- <div class="container"> -->
+								<div class="col-sm-6">
+									<div class="container d-flex">
+										<!-- <div id="drinkbox" class=""> -->
+											<div class="title">
+												<h4 id="drink-name">What will your drink be?</h4>
+											</div>
+											<img class="img-rounded" id="image" src="" alt="">
+										<!-- </div> -->
+									</div>
+								</div>
+								<!-- </div> -->
+							</div>
+							<div class="tab-pane fade" id="ingredient">
+								<p class="text-center" id="ingredients">CLICK IT!</p>
+							</div>
+							<div class="tab-pane fade justify-center" id="instructions">
+								<div id="glass-type">you should</div>
+							<p>CLICK THE BUTTON!!</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+<<<<<<< HEAD
 			<!-- Right Column -->
 			<!-- Output of the search will go here using jscript to fill content -->
 			<div>
@@ -63,5 +121,35 @@
       
   </main>
   <script src="./assets/script/script.js"></script>
+=======
+		</div>
+		</section>		
+	</div>
+<!--Maps Jumbotron-->
+	<div class="col-lg-12">
+		<div class="container text-center">
+			<section class="jumbotron col-md-8-offset-2">
+				<h3 class="jumbotron_heading">Store Locator</h3>
+				<p class="jumbotron-contents">Are you missing items to make a drink? Find a liquor store nearby to buy what you need.</p>
+			<!-- Placeholder Googlemap until the API is completed -->
+			<a href="./search-nearby.html">Find a liquor store near you!</a>
+
+			
+				<div class="container" id="jumbocontainer">
+				<iframe 
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26804.521054597346!2d-96.78077219999999!3d32.88322349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f958a69f2e1%3A0x95fc10ba98f7aad4!2sNorthPark%20Center!5e0!3m2!1sen!2sus!4v1637038034616!5m2!1sen!2sus" 
+				width="300" 
+				height="300" 
+				style="border:0;" 
+				allowfullscreen="" 
+				loading="lazy">
+				</iframe>
+				</div>
+			</section>	
+		</div>
+	</div>	
+<script src="./assets/script/script.js"></script>
+<script src="./assets/style/bootflat.github.io-master/js/site.min.js"></script>
+>>>>>>> origin/main
 </body>
 </html>
