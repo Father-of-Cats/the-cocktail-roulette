@@ -1,4 +1,4 @@
-# the-cocktail-wizard
+# Cocktail Roulette
 
 MVP and USER STORY:  
 Audience- Thirsty people  
