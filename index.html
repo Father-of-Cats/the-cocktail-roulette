@@ -42,19 +42,21 @@
 		</section>
 	</div>
 	<!--Drink & Search bar area-->
-	<div class="row">
+	<!-- <div class="row"> -->
 		<section class="col-12">
-		<div class="container-fluid">
+		<div class="container">
 		<!--Left Side Search Bar-->			
-			<div class="col-lg-6">
+			<div class="col-lg-12">
 				<div class="panel text-center" id="searchcontainer">		
 					<div class="card">
 					<div id="left-panel" class="container-fluid">	
 						<h2 id="panel-title aligin-items-center">Enter Your Drinking Moto</h2>
 						<form id="user-form" class="card-body aligin-items-center">
 							<label class="form-label" for="username"></label>
-							<input name="username" id="username" type="text" autofocus="true" class="form-input">
-							<button type="submit" class="btn">Get Drink</button>
+							<div id="buttonholder">
+								<input name="username" id="username" type="text" autofocus="true" class="form-input">
+								<button type="submit" class="btn">Get Drink</button>
+							</div>
 						</form>
 					</div>
 					</div>
@@ -62,7 +64,8 @@
 			</div>	
 		<!--Right Side Data Tabs-->
 			<span id="repo-search-term"></span>
-			<div class="col-lg-6">	
+			<!-- <div class="col-lg-12">	 -->
+				<div class="col-lg-12">
 				<div class="panel">
 					<div class="tabbable tabs-left clearfix">
 						<ul id="myTab1" class="nav nav-tabs nav-justified">
@@ -78,10 +81,13 @@
 									<div class="container d-flex">
 										<!-- <div id="drinkbox" class=""> -->
 											<div class="title">
-												<h4 id="drink-name">What will your drink be?</h4>
+												<h4 class="text-center"id="drink-name">What will your drink be?</h4>
 											</div>
-											<img class="img-rounded" id="image" src="" alt="">
-										<!-- </div> -->
+											<div class="text-center">
+											<img class="img-fluid" id="image" src="" alt="">
+											</div>
+												<!-- </div> -->
+
 									</div>
 								</div>
 								<!-- </div> -->
@@ -91,15 +97,16 @@
 							</div>
 							<div class="tab-pane fade justify-center" id="instructions">
 								<div id="glass-type">you should</div>
-							<p>CLICK THE BUTTON!!</p>
+								<p>CLICK THE BUTTON!!</p>
 							</div>
 						</div>
-					</div>
+				</div>	
+				</div>
 				</div>
 			</div>
 		</div>
 		</section>		
-	</div>
+	<!-- </div> -->
 <!--Maps Jumbotron-->
 	<div class="col-lg-12">
 		<div class="container text-center">
