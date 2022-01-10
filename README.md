@@ -1,4 +1,4 @@
-# Cocktail Roulette
+# Cocktail Roulette!
 
 MVP and USER STORY:  
 Audience- Thirsty people  
