@@ -2,34 +2,51 @@
 
 MVP and USER STORY:  
 Audience- Thirsty people  
-Problem Addressed- Don't know how to mix a drink  
-Problem Solved By- creating list of cocktails with ingredients, measurements, and mixing instructions  
+Problem Addressed- They aren't sure what cocktail to make  
+Problem Solved By- Generating a random cocktail for them to try  
 
 
 AS A: Thirsty person,
-I WANT: A list of cocktails I can make with items in my pantry,
-SO THAT: I can mix tasty drinks at home for myself and friends.		   
+I WANT: A cocktail recipe generated for me,
+SO THAT: I can mix tasty drinks at home for myself and friends
 
-GIVEN: a list of ingredients,
-WHEN: i select an ingredient, it's added to a list called "pantry".
-THEN: i am given a list of cocktails i can make from ingredients in pantry
+GIVEN: A random cocktail,
+WHEN: I select a cocktail
+THEN: I am given a list of ingredients and mixing instructions
 
-GIVEN: a list of cocktails,
-WHEN: i select a cocktail
-THEN: i am given a list of ingredients and mixing instructions
+GIVEN: A store locator,
+WHEN: I click the "find store" link,
+THEN: I am presented with a map of stores nearby 
 
-GIVEN: a list of cocktails,
-WHEN: i have a majority required of ingredients in my pantry,
-THEN: i am shown a list of missing ingredients
+  
+  
+  
+## Built With
+- HTML
+- CSS
+- JavaScript
+  
 
-GIVEN: a selected cocktail,
-WHEN: a list of missing ingredients exists,
-THEN: i am prompted to use a store locator
-
-GIVEN: a store locator,
-WHEN: i input my zip code,
-THEN: i am presented with a map of stores within a set distance
+## APIs Used
+- Bootflat
+- The Cocktail DB (on Rapid API)
+- Google Maps Platform and Places API
 
 
 ## Wireframe
-![Wirefram](assets/images/wireframe-project-1.png "Wireframe")
+![Wireframe](assets/images/wireframe-project-1.png "Wireframe")
+
+
+## Screen Capture
+![ScreenCapture](assets/images/screencapture.png "Screen Capture")
+
+
+## Website
+<https://father-of-cats.github.io/the-cocktail-roulette/>
+
+
+## Contributions
+- Elmer Reyes <https://github.com/Erey2790>
+- Hunter Nelson <https://github.com/Father-of-Cats>
+- Kevin Pena
+- Jeremy O'Daniel <https://github.com/jeremyodaniel>
