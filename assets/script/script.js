@@ -150,6 +150,9 @@ var formSubmitHandler = function (event) {
 		alert("Please enter a Drink")
 	}
 	console.log(event);
+
+	//localStorage.setItem("click", 1);
+	localStorage.clicks = +(localStorage.clicks || 0) + 1;
 };
 
 var displayDrink = function (repos, searchTerm) {
@@ -175,7 +178,12 @@ var findDuplicates = function (stringYouWantToFind) {
 
 }
 
+
+
 userFormEl.addEventListener("submit", formSubmitHandler);
+
+
+
 
 // searchNameEl.addEventListener("click", searchByNameHandler);
 
