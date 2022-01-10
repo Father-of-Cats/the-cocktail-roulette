@@ -151,7 +151,7 @@ var formSubmitHandler = function (event) {
 	}
 	console.log(event);
 
-	//localStorage.setItem("click", 1);
+	// add number of times the submit button is clicked to local storage
 	localStorage.clicks = +(localStorage.clicks || 0) + 1;
 };
 
