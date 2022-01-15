@@ -31,6 +31,8 @@ function initMap() {
 			infoWindow.open(map);
 			map.setCenter(pos);
 
+			// Call Places Nearby Search on user's location
+			getNearbyPlaces(pos);
 		}, () => {
 			// Browser supports geolocation but user denies permission
 			handleLocationError(true, infoWindow);
@@ -58,4 +60,44 @@ function handleLocationError(browserHasGeolocation, infoWindow) {
 	infoWindow.open(map);
 	currentInfoWindow = infoWindow;
 
+	// Call Places Nearby Search on the default location
+	getNearbyPlaces(pos);
 }
+
+// Perform a Places Nearby Search Request
+function getNearbyPlaces(position) {
+	let request = {
+		location: position,
+		rankBy: google.maps.places.RankBy.DISTANCE,
+		keyword: 'liquor_stores'
+	};
+
+	service = new google.maps.places.PlacesService(map);
+	service.nearbySearch(request, nearbyCallback);
+}
+
+// Handle Nearby Search results (MAX 20)
+function nearbyCallback(results, status) {
+	if (status == google.maps.places.PlacesServiceStatus.OK) {
+	createMarkers(results);
+	}
+}
+
+// Generate and set markers at the location of each place result
+function createMarkers(places) {
+	places.forEach(place => {
+		let marker = new google.maps.Marker({
+			position: place.geometry.location,
+			map: map,
+			title: place.name
+		});
+
+		// Adjust bounds to include the location of this marker
+		bounds.extend(place.geometry.location);
+	});
+
+	// After markers are placed adjust bounds to show all markers in the visible area
+	map.fitBounds(bounds);
+}
+
+
