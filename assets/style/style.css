@@ -13,6 +13,9 @@
 article {
     padding: 30px;
 }
+#buttonholder{
+    padding: 10px 10px;
+}
 #image {
     max-height: 200px;
     padding: 10px 10px 10px;
